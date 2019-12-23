@@ -6,13 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mr. Burger</title>
   <link rel="stylesheet" href="main.min.css">
+  <script src="jquery-3.4.1.min.js"> </script>
+  <script src="fullpage.js"> </script>
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="maincontent">
+    <main class="maincontent" id='fullpage'>
       <!-- секция приветствие ------------------------------------->
-      <section class="section greeting active">
+      <section class="section greeting active" data-anchor="greeting">
         <div class='container container--greeting'>
           <header class="header">
             <div class="logo logo--heeader">
@@ -56,7 +58,7 @@
         </div>
       </section>
      <!-- секция - Мы лучшие ------------------------------------->
-      <section class="section we-best">
+      <section class="section we-best" data-anchor="we-best">
         <div class="container container--we-best">
           <div class="title title--we-best">МЫ ЛУЧШИЕ</div>
           <ul class="list ">
@@ -113,7 +115,7 @@
         </div>
       </section>
      <!-- секция "бургеры" --------------------------------------->
-      <section class="section burgers">
+      <section class="section burgers" data-anchor="burgers">
         <div class="container burgers-container">
           <ul class='slides'>
             <li class='slide'>
@@ -264,7 +266,7 @@
         </div>
       </section>
      <!-- секкия команда ----------------------------------------->
-      <section class="section team">
+      <section class="section team" data-anchor="team">
         <div class="team-description">
           <div class="title title--team">КОМАНДА</div>
           <ul class="team-description__list">
@@ -327,7 +329,7 @@
         </div>
       </section>
      <!-- секция меню -------------------------------------------->
-      <section class="section menu">
+      <section class="section menu" data-anchor="menu">
       <div class="title title--menu">Меню</div>
         <ul class="menu__list">
           <li class="menu__item">
@@ -419,7 +421,7 @@
         </ul>
       </section>
       <!-- секция отзывы ------------------------------------------>
-      <section class="section reviews">
+      <section class="section reviews" data-anchor="reviews>
         <ul class="reviews__list">
           <li class="review-item">
             <div class="review__avatar">
@@ -565,7 +567,7 @@
         </div>
       </section>
       <!-- секция как мы работаем --------------------------------->
-      <section class="section player">
+      <section class="section player" data-anchor="player">
         <div class="container container--player">
           <h2 class="title title--player">как мы работаем</h2>
           <div class="video">
@@ -602,7 +604,7 @@
         </div>
       </section>
       <!-- секция формы ------------------------------------------->
-      <section class='section section-form'>
+      <section class='section section-form' data-anchor="section-form">
         <div class='container container--form'>
           <div class="title title--form">закажите доставку</div>
           <div class="form">
@@ -682,7 +684,7 @@
         </div>
       </section>
       <!-- секция контакты ------------------------------------------>
-      <section class="section contacts" id='map'>
+      <section class="section contacts" id='map' data-anchor="contacts">
         <footer class="footer">
           <div class="container footer-conteiner">
             <div class="contacts-wrap">
@@ -731,7 +733,7 @@
           </div>
         </footer>
       </section>
-    </div>
+    </main>
     <!-- секция полнокэранного меню  -->
     <section class="hamburger-menu" id="hamburger-menu">
       <div class='container container--hamburger-menu'>
@@ -766,44 +768,44 @@
       </div>
     </section>
 <!-- точенчная навигация -------------------------------------->
-    <ul class="dotnav">
-      <li class="dotnav__item dotnav__item--active">
+    <ul class="dotnav" id="menu">
+      <li class="dotnav__item dotnav__item--active" data-menuanchor="greeting">
         <a href="" class="dotnav__link" data-scroll-to='0'></a>
       </li>
-      <li class="dotnav__item">
+      <li class="dotnav__item" data-menuanchor="menu">
         <a href="" class="dotnav__link" data-scroll-to='1'></a>
       </li>
-      <li class="dotnav__item">
+      <li class="dotnav__item" data-menuanchor="menu">
         <a href="" class="dotnav__link" data-scroll-to='2'></a>
       </li>
-      <li class="dotnav__item">
+      <li class="dotnav__item" data-menuanchor="menu">
         <a href="" class="dotnav__link" data-scroll-to='3'></a>
       </li>
-      <li class="dotnav__item">
+      <li class="dotnav__item" data-menuanchor="menu">
         <a href="" class="dotnav__link" data-scroll-to='4'></a>
       </li>
-      <li class="dotnav__item">
+      <li class="dotnav__item" data-menuanchor="menu">
         <a href="" class="dotnav__link" data-scroll-to='5'></a>
       </li>
-      <li class="dotnav__item">
+      <li class="dotnav__item" data-menuanchor="menu">
         <a href="" class="dotnav__link" data-scroll-to='6'></a>
       </li>
-      <li class="dotnav__item">
+      <li class="dotnav__item" data-menuanchor="menu">
         <a href="" class="dotnav__link" data-scroll-to='7'></a>
       </li> 
-      <li class="dotnav__item">
+      <li class="dotnav__item" data-menuanchor="menu">
         <a href="" class="dotnav__link" data-scroll-to='8'></a>
       </li>
     </ul>
   </div>
 
 <!-- ============================подключение скриптов================================================= -->
-  <script src="https://api-maps.yandex.ru/2.1.17/?apikey=74e7ad2e-8c9e-41e9-a6a6-d56ffe620dbc&lang=ru_RU"
+  <!-- <script src="https://api-maps.yandex.ru/2.1.17/?apikey=74e7ad2e-8c9e-41e9-a6a6-d56ffe620dbc&lang=ru_RU"
      type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
-  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.js"></script> -->
   <script src="main.min.js"></script>
 </body>
 </html>
