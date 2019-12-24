@@ -16,11 +16,11 @@
   }
 }
 .menu__list {
-  // position: absolute;
-  // right: 0;
-  // top: 0;
-  // bottom: 0;
-  // left: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: auto;
   display: flex;
   height: 100%;
 }
@@ -49,7 +49,7 @@
 
 .menu__item--active {
   article {
-    width: 40vw;
+    width: 400px;
     padding: 5%;
   }
 }
