@@ -2,6 +2,70 @@
 function ready() {
   $('#fullpage').fullpage({
     menu: '#menu',
+    //Навигация
+	// menu: '#menu',
+	// lockAnchors: true,
+	// anchors:['firstPage', 'secondPage'],
+	// navigation: true,
+	// navigationPosition: 'right',
+	// navigationTooltips: ['firstSlide', 'secondSlide'],
+	// showActiveTooltip: false,
+	// slidesNavigation: true,
+	// slidesNavPosition: 'bottom',
+
+	// //Скроллинг
+	// css3: true,
+	// scrollingSpeed: 700,
+	// autoScrolling: true,
+	// fitToSection: true,
+	// fitToSectionDelay: 1000,
+	// scrollBar: false,
+	// easing: 'easeInOutCubic',
+	// easingcss3: 'ease',
+	// loopBottom: false,
+	// loopTop: false,
+	// loopHorizontal: true,
+	// continuousVertical: false,
+	// continuousHorizontal: false,
+	// scrollHorizontally: false,
+	// interlockedSlides: false,
+	// dragAndMove: false,
+	// offsetSections: false,
+	// resetSliders: false,
+	// fadingEffect: false,
+	// normalScrollElements: '#element1, .element2',
+	// scrollOverflow: false,
+	// scrollOverflowReset: false,
+	// scrollOverflowOptions: null,
+	// touchSensitivity: 15,
+	// bigSectionsDestination: null,
+
+	// //Доступ
+	// keyboardScrolling: true,
+	// animateAnchor: true,
+	// recordHistory: true,
+
+	// //Дизайн
+	controlArrows: false,
+	verticalCentered: false,
+	// sectionsColor : ['#ccc', '#fff'],
+	// paddingTop: '3em',
+	// paddingBottom: '10px',
+	// fixedElements: '#header, .footer',
+	// responsiveWidth: 0,
+	// responsiveHeight: 0,
+	// responsiveSlides: false,
+	// parallax: false,
+	// parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+	// cards: false,
+	// cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
+
+	// //Настроить селекторы
+	// sectionSelector: '.section',
+	slideSelector: '.slide1',
+
+	// lazyLoading: true,
+
   });
 };
 
