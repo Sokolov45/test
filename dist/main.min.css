@@ -1637,11 +1637,7 @@ template {
       min-height: 0; } }
 
 .menu__list {
-  right: 0;
-  top: 0;
-  bottom: 0;
-  left: auto;
-  display: flex;
+  /* display: flex; */
   height: 100%; }
 
 .menu__item {
