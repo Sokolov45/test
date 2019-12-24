@@ -1637,7 +1637,7 @@ template {
       min-height: 0; } }
 
 .menu__list {
-  /* display: flex; */
+  display: flex;
   height: 100%; }
 
 .menu__item {
@@ -1660,7 +1660,7 @@ template {
         font-size: 1rem; } }
 
 .menu__item--active article {
-  width: 40vw;
+  width: 400px;
   padding: 5%; }
 
 .menu__item-title {
