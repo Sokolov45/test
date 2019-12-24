@@ -12,12 +12,13 @@
     min-height: 0;
   }
   @include phones {
-    min-height: 0;
+    min-height: 0;    ьшт-рушпреЖ 0ж
+
   }
   }
 
 .menu__list {
-  position: absolute;
+  // position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
