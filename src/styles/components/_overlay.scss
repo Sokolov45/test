@@ -1,0 +1,53 @@
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.493);
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+  
+  .overlay__content-wrap {
+    width: 17rem;
+    height: 9rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(243, 243, 243);
+    border-radius: 5px;
+  }
+  
+  .overlay__content {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    color: rgb(70, 68, 68);
+    font: 16px Helvetica, sans-serif;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .close {
+    
+    font: 16px Helvetica, sans-serif;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    background: #e45028;
+    border-radius: 5px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      background: #8a321a;
+
+    }
+  }
+  

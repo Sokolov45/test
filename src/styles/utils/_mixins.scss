@@ -1,0 +1,50 @@
+// media
+@mixin desktop {
+	@media screen and (max-width: $desktop) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: $laptop) {
+		@content;
+	}
+}
+
+@mixin tablets {
+	@media screen and (max-width: $tablets) {
+		@content;
+	}
+}
+
+@mixin tablets-gorizontal {
+	@media screen and (max-height: 450px) {
+		@content;
+	}
+}
+
+@mixin phones {
+	@media screen and (max-width: $phones) {
+		@content;
+	}
+}
+
+
+
+@mixin rul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin title-style {
+  font-family: $title-font;
+	font-size: 4.5rem;
+	color: $title-color;
+}

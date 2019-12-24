@@ -1,0 +1,102 @@
+.greeting {
+  height: 100%;
+  width: 100%;
+  background: url(images/jpg/bg_desc.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container--greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.43rem;
+  align-items: center;
+
+  @include tablets {
+    display: flex;
+    justify-content: space-between;
+	  }
+}
+
+.description {
+  overflow: hidden;
+  max-width: 100%;
+  padding: 1rem 1rem;
+  @include flex;
+  &__title-wrap {
+    width: min-content;
+    padding-top: 4.37rem;
+    padding-right: 1rem;
+    @include tablets {
+      padding-top: 2rem;
+    }
+    @include tablets-gorizontal {
+      font-size: 1.5rem;
+    }
+  }
+  &__title-bottom {
+    font-family: 'lifehackmedium';
+    font-size: 4rem;
+    @include laptop {
+      font-size: 2.7rem;
+      width: 55vw;
+      width: fit-content;
+    }
+    @include tablets {
+      font-size: 2,5rem;
+      width: 55vw;
+      width: fit-content;
+    }
+    @include tablets-gorizontal {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    top: 45%;
+    .description__title-wrap {
+      padding-top: 2rem;
+    }
+  }
+}
+
+.description__img-wrap {
+  margin-right: 1.25rem;
+  width: 45vw;
+  @include tablets {
+    width: 50vw;
+    // height: 50vh;
+  }
+  @include tablets-gorizontal {
+    width: 30vw;
+  }
+}
+.description__img {
+    width: 100%; /* Ширина изображений */
+    height: 100%; /* Высота изображении */
+    object-fit: cover;
+
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+
+}

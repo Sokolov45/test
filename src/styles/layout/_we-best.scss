@@ -1,0 +1,84 @@
+.we-best {
+  height: 100%;
+  // min-height: 40.62rem;
+  width: 100%;
+  color: black;
+  font-family: 'ubunturegular';
+  background: url(images/jpg/bg_2.jpg) no-repeat center center;
+  background-size: cover;
+  @include tablets {
+    min-height: 0;
+  }
+  @include phones {
+  min-height: 0;
+  }
+}
+
+.container--we-best {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include tablets-gorizontal {
+  justify-content: end;
+  }
+}
+
+.list {
+  @include flex;
+  align-items: baseline;
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+
+    .list__item {
+      margin-bottom: 3rem;
+    }
+    .list__item-pic-wrap {
+      margin-right: 2rem;
+    }
+    .list__item-desc {
+      text-align: left;
+      p {
+        margin-top: 0;
+      }
+    }
+
+	  }
+}
+
+.list__item {
+  flex: 1;
+  margin-right: 5%;
+  text-align: center;
+
+  &:nth-of-type(3) {
+    margin-right: 0;
+  }
+
+  @include phones {
+    display: flex;
+    justify-content: space-between;
+	  }
+}
+
+
+
+.list__item-pic-wrap {
+  margin-bottom: 7%;
+}
+
+.list__item-desc {
+  p {
+    font-family: 'lifehackmedium';
+    font-size: 1.5rem;
+    margin-bottom: 7%;
+  }
+  article {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 0.87rem;
+    color: rgba(47, 50, 52, 0.8);
+  }
+}

@@ -1,0 +1,108 @@
+.contacts {
+  height: 100%;
+  min-height: 40.62rem;
+  width: 100%;
+  // background: url(images/jpg/map.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  font-family:  'Ubuntu';
+  font-weight: 500;
+  @include tablets {
+    min-height: 0;
+  }
+  @include phones {
+    min-height: 0;
+  }
+}
+
+.footer {
+  // background-color: rgb(9, 9, 9);
+  background: url(images/jpg/bg-footer.jpg) center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: auto;
+  display: flex;
+  padding: 1rem 0;
+  z-index: 2000;
+}
+
+.footer-conteiner {
+  display: flex;
+    @include phones {
+      flex-direction: column;
+      @include flex;
+      }
+}
+
+.contacts-wrap {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include phones {
+    width: 90%;
+    margin-bottom: 0.5rem;
+    @include flex;
+  }
+}
+
+.adress {
+  margin-bottom: 0.5rem;
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  @include phones {
+    margin-bottom: 0.5rem;
+
+  }
+}
+
+.phone {
+  color:#e45028;
+  font-family: 'Ubuntu';
+}
+
+.social {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  @include phones {
+    padding-bottom: 0.5rem;
+    justify-content: center;
+  }
+}
+
+.social__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @include phones {
+    justify-content: center;
+    justify-content: center;
+  }
+}
+
+.social__item {
+  margin-right: 30%;
+  &:nth-last-child(1) {
+    margin-right: 0;
+  }
+}
+
+.phone {
+  color: #ff4800c9;
+}
+
+.icon--twitter,
+.icon--inst,
+.icon--fb,  
+.icon--vk {
+  fill: rgba(87, 84, 84, 0.774);
+  &:hover {
+    fill: white;
+    transition: 0.3s;
+  }
+}

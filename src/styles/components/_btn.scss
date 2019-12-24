@@ -1,0 +1,21 @@
+.btn {
+  border-radius: 7%;
+  padding: 0.5rem 0.68rem;
+  color: white;
+  background-color: #e45028;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 0.81rem;
+
+  &:hover {
+    background-color: #931a1a;
+  }
+}
+
+.btn--greeting {
+  @include tablets {
+    margin-right: 1rem;
+    padding: 0.45rem 0.5rem;
+  }
+}
+

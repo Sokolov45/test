@@ -1,0 +1,50 @@
+.arrow-scroll {
+  position: absolute;
+
+  &--greeting {
+    bottom: 3%;
+    left: 50%;
+    z-index: 30;
+    fill: #fff;
+    cursor: pointer;
+    @include tablets {
+      width: 1rem;
+      height: 1rem;
+    }
+    @include phones {
+      margin-bottom: 5%;;
+    }
+
+    &:hover {
+    fill: $title-color;
+    transition: 0.6s ease;
+    }
+  }
+
+  
+  &--burgers-slaider-left {
+    bottom: 50%;
+    left: 5%;
+    z-index: 30;
+    transform: rotate(90deg);
+    fill: #fff;
+    cursor: pointer;
+    &:hover {
+      fill: black;
+      transition: 0.6s ease;
+      }
+  }
+  &--burgers-slaider-right {
+    bottom: 50%;
+    cursor: pointer;
+    right: 5%;
+    z-index: 30;
+    transform: rotate(-90deg);
+    fill: #fff;
+    &:hover {
+      fill: black;
+      transition: 0.6s ease;
+      }
+  }
+
+}

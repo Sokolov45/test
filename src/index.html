@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mr. Burger</title>
+  <link rel="stylesheet" href="main.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="maincontent" id="fullpage">
+      <!-- секция приветствие ------------------------------------->
+      <section class="section greeting active">
+        <div class='container container--greeting'>
+          <header class="header">
+            <div class="logo logo--heeader">
+              <svg class="icon icon--logo">
+                <use xlink:href="images/icons/sprite.svg#logo"></use>
+              </svg>
+            </div>
+            <nav class="nav-wrap">
+              <ul class="nav">
+                <li class="nav__item"><a href='#' class='nav__link full-menu-link nav__link--active'>O НАС</a></li>
+                <li class="nav__item"><a href='#' class='nav__link full-menu-link' data-scroll-to='2'>БУРГЕРЫ</a></li>
+                <li class="nav__item"><a href='#' class='nav__link full-menu-link' data-scroll-to='3'>КОМАНДА</a></li>
+                <li class="nav__item"><a href='#' class='nav__link full-menu-link' data-scroll-to='4'>МЕНЮ</a></li>
+                <li class="nav__item"><a href='#' class='nav__link full-menu-link' data-scroll-to='5'>ОТЗЫВЫ</a></li>
+                <li class="nav__item"><a href='#' class='nav__link full-menu-link' data-scroll-to='6'>КАК МЫ РАБОТАЕМ</ф>
+                </li>
+                <li class="nav__item"><a href='#' class='nav__link' data-scroll-to='8'>КОНТАКТЫ</a></li>
+              </ul>
+            </nav>
+            <div class='buttons'>
+              <a class="btn btn--greeting" href="#" data-scroll-to='7'>ЗАКАЗАТЬ</a>
+              <a class="hamburger-menu-link" href="#" id='hamburger'>
+                <div class='hamburger-menu-badge'></div>
+              </a>
+            </div>
+          </header>
+          <div class="description">
+            <div class="description__img-wrap">
+              <img src="./images/png/burger.png" alt="" class='description__img'>
+            </div>
+            <div class="description__title-wrap">
+              <div class="title title--greeting">мы делаем</div>
+              <div class="description__title-bottom">натуральные бургеры</div>
+            </div>
+          </div>
+          <a class='arrow-scroll arrow-scroll--greeting' data-scroll-to='1'>
+            <svg class="icon icon--arrow-scroll">
+              <use xlink:href="images/icons/sprite.svg#arrow-scroll"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+     <!-- секция - Мы лучшие ------------------------------------->
+      <section class="section we-best">
+        <div class="container container--we-best">
+          <div class="title title--we-best">МЫ ЛУЧШИЕ</div>
+          <ul class="list ">
+            <li class="list__item">
+              <div class="list__item-pic-wrap">
+                <svg class="icon icon--meat">
+                  <use xlink:href="images/icons/sprite.svg#meat">
+                  </use>
+                </svg>
+              </div>
+              <div class="list__item-desc">
+                <p>100% свежее мясо</p>
+                <article>
+                  Empty spaces - what are we living for?
+                  Abandoned places - I guess we know the score..
+                  On and on!!!
+                  Does anybody know what we are looking for?
+                </article>
+              </div>
+            </li>
+            <li class="list__item">
+              <div class="list__item-pic-wrap">
+                <svg class="icon icon--hand">
+                  <use xlink:href="images/icons/sprite.svg#hand"></use>
+                </svg>
+              </div>
+              <div class="list__item-desc">
+                <p>Ручная сборка</p>
+                <article>
+                  Empty spaces - what are we living for?
+                  Abandoned places - I guess we know the score..
+                  On and on!
+                  Does anybody know what we are looking for?
+                </article>
+              </div>
+            </li>
+            <li class="list__item">
+              <div class="list__item-pic-wrap">
+                <svg class="icon icon--natural">
+                  <use xlink:href="images/icons/sprite.svg#natural"></use>
+                </svg>
+              </div>
+              <div class="list__item-desc">
+                <p>Натуральные ингридиенты</p>
+                <article>
+                  Empty spaces - what are we living for?
+                  Abandoned places - I guess we know the score..
+                  On and on!
+                  Does anybody know what we are looking for?
+                </article>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+     <!-- секция "бургеры" --------------------------------------->
+      <section class="section burgers">
+        <div class="container burgers-container">
+          <ul class='slides'>
+            <li class='slide visible'>
+              <div class="burgers__pic-wrap">
+                <img src="images/png/burger-niger.png" alt="">
+              </div>
+              <div class="burgers__desc">
+                <div class="title title--burgers">dark beef burger</div>
+                <article>
+                  Курочка, приготовленная на гриле, в сочетании с сыром Чеддер и сыром Пармезан, хрустящим луком,
+                  свежими овощами под несравненным соусом Цезарь. Много-много сыра!
+                </article>
+                <div class='burgers__price'>
+                  <div class="burger__desc-price"><div class="burger__desc-price-how-many">400</div>рублей</div>
+                  <a class="btn btn--burgers" href="#" data-scroll-to='7'>ЗАКАЗАТЬ</a>
+                </div>
+              </div>
+            </li>
+            <li class='slide'>
+              <div class="burgers__pic-wrap">
+                <img src="images/png/burgers/1.png" alt="">
+              </div>
+              <div class="burgers__desc">
+                <div class="title title--burgers">Двойной ВОППЕР</div>
+                <article>
+                  Сколько бы ни говорилось о вреде быстрого питания, душа все равно иногда просит какой-нибудь бургер,
+                  да посочнее. А потому, если уж есть такое желание, то лучше сделать его самому, или попросить вторую половинку.
+                  Бургеры – наиболее популярный вид перекуса. Простая и сытная еда ещё и очень удобна.
+                </article>
+                <div class='burgers__price'>
+                  <div class="burger__desc-price"><div class="burger__desc-price-how-many">500</div>рублей</div>
+                  <a class="btn btn--burgers" href="#" data-scroll-to='7'>ЗАКАЗАТЬ</a>
+                </div>
+              </div>
+            </li>
+            <li class='slide'>
+              <div class="burgers__pic-wrap">
+                <img src="images/png/burgers/2.png" alt="">
+              </div>
+              <div class="burgers__desc">
+                <div class="title title--burgers">Фиш Кинг burger</div>
+                <article>
+                  Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
+                  кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом, и соусом гриль.
+                </article>
+                <div class='burgers__price'>
+                  <div class="burger__desc-price"><div class="burger__desc-price-how-many">335</div>рублей</div>
+                  <a class="btn btn--burgers" href="#" data-scroll-to='7'>ЗАКАЗАТЬ</a>
+                </div>
+              </div>
+            </li>
+            <li class='slide'>
+              <div class="burgers__pic-wrap">
+                <img src="images/png/burgers/4.png" alt="">
+              </div>
+              <div class="burgers__desc">
+                <div class="title title--burgers">Беконайзер</div>
+                <article>
+                  Встречай самый внушительный бургер в коллекции Бургер Кинг. Бекон, двойная порция говядины на гриле.
+                </article>
+                <div class='burgers__price'>
+                  <div class="burger__desc-price"><div class="burger__desc-price-how-many">300</div>рублей</div>
+                  <a class="btn btn--burgers" href="#" data-scroll-to='7'>ЗАКАЗАТЬ</a>
+                </div>
+               </div>
+            </li>
+            <li class='slide'>
+              <div class="burgers__pic-wrap">
+                <img src="images/png/burgers/4.png" alt="">
+              </div>
+              <div class="burgers__desc">
+                <div class="title title--burgers">Беконайзер</div>
+                <article>
+                  Встречай самый внушительный бургер в коллекции Бургер Кинг. Бекон, двойная порция говядины на гриле.
+                </article>
+                <div class='burgers__price'>
+                  <div class="burger__desc-price"><div class="burger__desc-price-how-many">300</div>рублей</div>
+                  <a class="btn btn--burgers" href="#" data-scroll-to='7'>ЗАКАЗАТЬ</a>
+                </div>
+               </div>
+            </li>
+          </ul>
+          <div class='arrow-scroll arrow-scroll--burgers-slaider-right' id="nextBurger">
+              <svg class="icon icon--arrow-scroll">
+                <use xlink:href="images/icons/sprite.svg#arrow-scroll"></use>
+              </svg>
+            </div>
+          <div class='arrow-scroll arrow-scroll--burgers-slaider-left' id="prevBurger">
+            <svg class="icon icon--arrow-scroll">
+              <use xlink:href="images/icons/sprite.svg#arrow-scroll"></use>
+            </svg>
+          </div>
+          <div class='burgers__icon-burger' id="icon-burger">
+            <svg class="icon icon--burger">
+              <use xlink:href="images/icons/sprite.svg#burger"></use>
+            </svg>
+            <ul class="composition" id="composition">
+              <li class="composition__item">
+                <svg class="icon icon--arrow-scroll">
+                  <use xlink:href="images/icons/sprite.svg#beef"></use>
+                </svg>
+                <span class="composition__name">Говядина</span>
+                <span class='composition__weight'>300 г</span>
+              </li>
+              <li class="composition__item">
+                <svg class="icon">
+                  <use xlink:href="images/icons/sprite.svg#buns"></use>
+                </svg>
+                <span class="composition__name">Булочки</span>
+                <span class='composition__weight'>100 г</span>
+              </li>
+              <li class="composition__item">
+                <svg class="icon icon--arrow-scroll">
+                  <use xlink:href="images/icons/sprite.svg#salad"></use>
+                </svg>
+                <span class="composition__name">Зелень</span>
+                <span class='composition__weight'>70 г</span>
+              </li>
+              <li class="composition__item">
+                <svg class="icon icon--arrow-scroll">
+                  <use xlink:href="images/icons/sprite.svg#sauce"></use>
+                </svg>
+                <span class="composition__name">Соус</span>
+                <span class='composition__weight'>150 г</span>
+              </li>
+              <li class="composition__item">
+                <svg class="icon icon--arrow-scroll">
+                  <use xlink:href="images/icons/sprite.svg#cucumber"></use>
+                </svg>
+                <span class="composition__name">Овощи</span>
+                <span class='composition__weight'>200 г</span>
+              </li>
+              <li class="composition__item">
+                <svg class="icon icon--arrow-scroll">
+                  <use xlink:href="images/icons/sprite.svg#cheese"></use>
+                </svg>
+                <span class="composition__name">Сыр</span>
+                <span class='composition__weight'>80 г</span>
+              </li>
+            </ul>
+          </div>
+          <div class='burgers__icon-kkal'>
+            <svg class="icon icon--kkal">
+              <use xlink:href="images/icons/sprite.svg#kkal"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+     <!-- секкия команда ----------------------------------------->
+      <section class="section team">
+        <div class="team-description">
+          <div class="title title--team">КОМАНДА</div>
+          <ul class="team-description__list">
+            <li class="team-description__item">
+              <div class="team-description__item-name">КОНСТАНТИН ПОМИДОРОВ</div>
+              <div class="team-description__item-description">
+                <div class="team-description__item-avatar-wrap"><img src="images/png/avatars/aphex.png" alt="">
+                </div>
+                <div class="team-description__item-scills">
+                  <div class='team-description__item-position'>Оператор</div>
+                  <div class="team-description__item-mes">
+                    С радостью может подобрать идеальный бургер и оформить заказ.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-description__item">
+              <div class="team-description__item-name">
+                ГЛЕБ ХЛЕБОВ
+              </div>
+              <div class="team-description__item-description">
+                <div class="team-description__item-avatar-wrap">
+                  <img src="images/png/avatars/aphex.png" alt="">
+                </div>
+                <div class="team-description__item-scills">
+                  <div class='team-description__item-position'>
+                    Оператор
+                  </div>
+                  <div class="team-description__item-mes">
+                    С радостью может подобрать идеальный бургер и оформить заказ.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-description__item">
+              <div class="team-description__item-name">СЕМЁН АНТРЕСОЛЬКО</div>
+              <div class="team-description__item-description">
+                <div class="team-description__item-avatar-wrap"><img src="images/png/avatars/aphex.png" alt=""></div>
+                <div class="team-description__item-scills">
+                  <div class='team-description__item-position'>Оператор</div>
+                  <div class="team-description__item-mes">
+                    С радостью может подобрать идеальный бургер и оформить заказ.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-description__item">
+              <div class="team-description__item-name">ИВАН ТОЛКУШКИН</div>
+              <div class="team-description__item-description">
+                <div class="team-description__item-avatar-wrap"><img src="images/png/avatars/aphex.png" alt=""></div>
+                <div class="team-description__item-scills">
+                  <div class='team-description__item-position'>Оператор</div>
+                  <div class="team-description__item-mes">
+                    С радостью может подобрать идеальный бургер и оформить заказ.
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+     <!-- секция меню -------------------------------------------->
+      <section class="section menu">
+      <div class="title title--menu">Меню</div>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <div class="menu__item-title">
+              <p>Для мясоедов</p>
+            </div>
+            <article>
+              Моя бабушка курит трубку,
+              Чёрный-пречёрный табак,
+              Моя бабушка курит трубку
+              В суровый моряцкий затяг.
+              Моя бабушка курит трубку
+              И обожает огненный ром,
+              А когда я к бабуле
+              Заскочу на минутку,
+              Мы с ней его весело пьём.
+              У неё ничего не осталось,
+              У неё в кошельке три рубля,
+              Моя бабушка курит трубку,
+              Трубку курит бабушка моя.
+            </article>
+          </li>
+          <li class="menu__item">
+            <div class="menu__item-title">
+              <p>Вегетерианское меню</p>
+            </div>
+            <article>
+              Холодный ветер с дождём
+              Усилился стократно
+              Всё говорит об одном
+              Что нет пути обратно
+              Что ты не мой Лопушок
+              А я не твой Андрейка
+              Что у любви у нашей
+              Села батарейка.
+
+              Припев:
+
+              Оо ия иё Батарейка
+              Оо ия иё Батарейка
+            </article>
+          </li>
+          <li class="menu__item">
+            <div class="menu__item-title">
+              <p>Диетическое меню</p>
+            </div>
+            <article>
+                This is my December
+                This is my time of the year
+                This is my December
+                This is all so clear
+                This is my December
+                This is my snow covered home
+                This is my December
+                This is me alone
+
+                And I
+                Just wish that
+                I didn't feel
+                Like there was
+                Something I missed
+                And I
+                Take back all
+                The things I said
+                To make you
+                Feel like that
+                And I
+                Just wish that
+                I didn't feel
+                Like there was
+                Something I missed
+                And I
+                Take back all the
+                Things I said to you
+
+                And I give it all away
+                Just to have somewhere
+                To go to
+                Give it all away
+                To have someone
+                To come home to
+
+                This is my December
+                These are my snow-covered trees
+                This is me pretending
+                This is all I need
+            </article>
+          </li>
+        </ul>
+      </section>
+      <!-- секция отзывы ------------------------------------------>
+      <section class="section reviews">
+        <ul class="reviews__list">
+          <li class="review-item">
+            <div class="review__avatar">
+              <img src="images/jpg/avatars/1.jpg" alt="">
+            </div>
+            <div class="review__content">
+              <p>Мария Изабеллова</p>
+              <article>
+                A song without words, a night without sleep
+                Everything in due time - winter and spring,
+                Each star has its own piece of heaven
+                To each sea - a breath of rain.
+              </article>
+              <a href="#" class="review__btn">ПОДРОБНЕЕ</a>
+              <a href="" class="review__btn-480">ЧИТАТЬ ОТЗЫВ</a>
+            </div>
+          </li>
+          <li class="review-item">
+            <div class="review__avatar">
+              <img src="images/jpg/avatars/2.jpg" alt="">
+            </div>
+            <div class="review__content">
+              <p>Мария Изабеллова</p>
+              <article>
+                A song without words, a night without sleep
+                Everything in due time - winter and spring,
+                Each star has its own piece of heaven
+                To each sea - a breath of rain.
+              </article>
+              <a href="#" class="review__btn">ПОДРОБНЕЕ</a>
+              <a href="" class="review__btn-480">ЧИТАТЬ ОТЗЫВ</a>
+            </div>
+          </li>
+          <li class="review-item">
+            <div class="review__avatar">
+              <img src="images/jpg/avatars/3.jpg" alt="">
+            </div>
+            <div class="review__content">
+              <p>Мария Изабеллова</p>
+              <article>
+                A song without words, a night without sleep
+                Everything in due time - winter and spring,
+                Each star has its own piece of heaven
+                To each sea - a breath of rain.
+              </article>
+              <a href="#" class="review__btn">ПОДРОБНЕЕ</a>
+              <a href="" class="review__btn-480">ЧИТАТЬ ОТЗЫВ</a>
+            </div>
+          </li>
+          <li class="review-item">
+            <div class="review__avatar">
+              <img src="images/jpg/avatars/4.jpg" alt="">
+            </div>
+            <div class="review__content">
+              <p>Мария Изабеллова</p>
+              <article>
+                A song without words, a night without sleep
+                Everything in due time - winter and spring,
+                Each star has its own piece of heaven
+                To each sea - a breath of rain.
+              </article>
+              <a href="" class="review__btn">ПОДРОБНЕЕ</a>
+              <a href="" class="review__btn-480">ЧИТАТЬ ОТЗЫВ</a>
+            </div>
+          </li>
+          <li class="review-item">
+            <div class="review__avatar">
+              <img src="images/jpg/avatars/5.jpg" alt="">
+            </div>
+            <div class="review__content">
+              <p>Мария Изабеллова</p>
+              <article>
+                A song without words, a night without sleep
+                Everything in due time - winter and spring,
+                Each star has its own piece of heaven
+                To each sea - a breath of rain.
+              </article>
+              <a href="" class="review__btn">ПОДРОБНЕЕ</a>
+              <a href="" class="review__btn-480">ЧИТАТЬ ОТЗЫВ</a>
+            </div>
+          </li>
+          <li class="review-item">
+            <div class="review__avatar">
+              <img src="images/jpg/avatars/6.jpg" alt="">
+            </div>
+            <div class="review__content">
+              <p>Мария Изабеллова</p>
+              <article>
+                A song without words, a night without sleep
+                Everything in due time - winter and spring,
+                Each star has its own piece of heaven
+                To each sea - a breath of rain.
+              </article>
+              <a href="" class="review__btn">ПОДРОБНЕЕ</a>
+              <a href="" class="review__btn-480">ЧИТАТЬ ОТЗЫВ</a>
+            </div>
+          </li>
+          <li class="review-item">
+            <div class="review__avatar">
+              <img src="images/jpg/avatars/7.jpg" alt="">
+            </div>
+            <div class="review__content">
+              <p>Мария Изабеллова</p>
+              <article>
+                A song without words, a night without sleep
+                Everything in due time - winter and spring,
+                Each star has its own piece of heaven
+                To each sea - a breath of rain.
+              </article>
+              <a href="" class="review__btn">ПОДРОБНЕЕ</a>
+              <a href="" class="review__btn-480">ЧИТАТЬ ОТЗЫВ</a>
+            </div>
+          </li>
+          <li class="review-item">
+            <div class="review__avatar">
+              <img src="images/jpg/avatars/8.jpg" alt="">
+            </div>
+            <div class="review__content">
+              <p>Мария Изабеллова</p>
+              <article>
+                A song without words, a night without sleep
+                Everything in due time - winter and spring,
+                Each star has its own piece of heaven
+                To each sea - a breath of rain.
+              </article>
+              <a href="" class="review__btn">ПОДРОБНЕЕ</a>
+              <a href="" class="review__btn-480">ЧИТАТЬ ОТЗЫВ</a>
+            </div>
+          </li>
+        </ul>
+        <div class="reviews__modal">
+          <div class='reviews__modal-content'>
+            <div class="modal-top">
+              <div class='reviews__modal-title'>Мария Изабеллова</div>
+              <a class="revies-close" href="#"></a>
+            </div>
+            <div class='reviews__modal-comment'> A song without words, a night without sleep
+              Everything in due time - winter and spring,
+              Each star has its own piece of heaven
+              To each sea - a breath of rain.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- секция как мы работаем --------------------------------->
+      <section class="section player">
+        <div class="container container--player">
+          <h2 class="title title--player">как мы работаем</h2>
+          <div class="video">
+            <div class="video__player">
+              <video class='video-target' src="video/ny.mp4" poster="images/jpg/bg_2.jpg">
+              </video>
+              <svg class="video__player-btn">
+                <use xlink:href="images/icons/sprite.svg#play"></use>
+              </svg>
+              <div class="panel">
+                <div class="panel__stop">
+                  <div class="video__playpause-btn">
+                      <svg class="video__icon--on">
+                          <use xlink:href="images/icons/sprite.svg#play"></use>
+                      </svg>
+                      <div class="video__icon-pause"></div>
+                  </div>
+                  <div class="video__progress-bar">
+                      <div class="video__progress-current"></div>
+                  </div>
+                </div>
+                <div class="controls-volume">
+                  <div class="video__volume-btn">
+                    <svg class="video__icon volume__icon--on">
+                        <use xlink:href="images/icons/sprite.svg#volume"></use>
+                    </svg>
+                  </div>
+                  <div class="video__volume-bar">
+                    <div class="video__volume-current"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- секция формы ------------------------------------------->
+      <section class='section section-form'>
+        <div class='container container--form'>
+          <div class="title title--form">закажите доставку</div>
+          <div class="form">
+            <form  action="" class="form__elem" id="myForm">
+              <div class="form__left-block">
+                <div class="form__row">
+                  <label class="form__block">
+                    <div class="form__block-title">Имя</div>
+                    <input type="text" name="name" class="form__input" required>
+                  </label>
+                  <label class="form__block">
+                    <div class="form__block-title">Телефон</div>
+                    <input placeholder="89198887745245" type="text" name="phone" class="form__input" required>
+                  </label>
+                </div>
+                <label class="form__block">
+                  <div class="form__block-title">Улица</div>
+                  <input type="text" name="street" class="form__input form__input--street">
+                </label>
+                <div class="form__row">
+                  <label class="form__block">
+                    <div class="form__block-title">Дом</div>
+                    <input type="text" name="home" class="form__input">
+                  </label>
+                  <label class="form__block">
+                    <div class="form__block-title">Корпус</div>
+                    <input type="text" name="housing" class="form__input">
+                  </label>
+                  <label class="form__block">
+                    <div class="form__block-title">Квартира</div>
+                    <input type="text" name="flat" class="form__input">
+                  </label>
+                  <label class="form__block">
+                    <div class="form__block-title">этаж</div>
+                    <input type="text" name="floor" class="form__input">
+                  </label>
+                </div>
+              </div>
+              <label class="form__right-block">
+                <label class="form__block">
+                  <div class="form__block-title">Коментарий</div>
+                  <textarea name="comment" class="form__input form__input--textarea" required></textarea>
+                </label>
+                <div class="form__question">
+                  <label class='form__question-change'>
+                    <input type="radio" name="payment" value="" class="radio">
+                    <div class="form__question-title">
+                      Потребуется сдача?
+                    </div>
+                  </label>
+                  <label class='form__question-card'>
+                    <input type="radio" name="payment" value="" class="radio">
+                    <div class="form__question-title">
+                      Оплата по карте
+                    </div>
+                  </label>
+                </div>
+                <label class="form__no-call">
+                  <input type="checkbox" name="no-call" id="" class="checkbox">
+                  <div class='form__no-call-elem'>Не перезванивать</div>
+                </label>
+                <div class="form__buttons">
+                  <input type="submit" value="Заказать" class="submit btn" id='loadButton'>
+                  <input type="reset" value="Очистить" class="reset">
+                </div>
+              </label>
+            </form>
+          </div>
+        </div>
+        <div class="overlay">
+          <div class="overlay__content-wrap">
+            <div class="overlay__content">
+              Заполните-ка необходимые поля
+            </div>
+            <a class="close" href="#">закрыть</a>
+        </div>
+        </div>
+      </section>
+      <!-- секция контакты ------------------------------------------>
+      <section class="section contacts" id='map'>
+        <footer class="footer">
+          <div class="container footer-conteiner">
+            <div class="contacts-wrap">
+              <address class="adress">
+                Санкт-Петербург, ул.Бабушкина,д.12/1,15
+              </address>
+              <div class="phone">
+                <svg class="icon icon--phone">
+                  <use xlink:href="images/icons/sprite.svg#phone"></use>
+                </svg>
+                +7 (819) 7777-23-23
+              </div>
+            </div>
+            <div class="social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="icon icon--vk">
+                      <use xlink:href="images/icons/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="icon icon--fb">
+                      <use xlink:href="images/icons/sprite.svg#fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="icon icon--inst">
+                      <use xlink:href="images/icons/sprite.svg#inst"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="icon icon--twitter">
+                      <use xlink:href="images/icons/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <!-- секция полнокэранного меню  -->
+    <section class="hamburger-menu" id="hamburger-menu">
+      <div class='container container--hamburger-menu'>
+        <header class="header--hamburger-menu">
+          <div class="logo logo--heeader">
+            <svg class="icon icon--logo">
+              <use xlink:href="images/icons/sprite.svg#logo"></use>
+            </svg>
+          </div>
+          <a class="hamburger-menu-link" href="#" id='hamburger-open'>
+            <div class='hamburger-menu-badge--open'></div>
+          </a>
+        </header>
+        <nav class="nav-wrap">
+            <ul class="nav--hamburger-menu">
+              <li class="nav__item"><a href='#' class='nav__link full-menu-link nav__link--active' data-scroll-to='0'>O НАС</a></li>
+              <li class="nav__item">•</li>
+              <li class="nav__item"><a href='#' class='nav__link full-menu-link' data-scroll-to='2'>БУРГЕРЫ</a></li>
+              <li class="nav__item">•</li>
+              <li class="nav__item"><a href='#' class='nav__link full-menu-link' data-scroll-to='3'>КОМАНДА</a></li>
+              <li class="nav__item">•</li>
+              <li class="nav__item"><a href='#' class='nav__link full-menu-link' data-scroll-to='4'>МЕНЮ</a></li>
+              <li class="nav__item">•</li>
+              <li class="nav__item"><a href='#' class='nav__link full-menu-link' data-scroll-to='5'>ОТЗЫВЫ</a></li>
+              <li class="nav__item">•</li>
+              <li class="nav__item"><a href='#' class='nav__link full-menu-link' data-scroll-to='6'>КАК МЫ РАБОТАЕМ</a>
+              </li>
+              <li class="nav__item">•</li>
+              <li class="nav__item"><a href='#' class='nav__link full-menu-link' data-scroll-to='8'>КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+      </div>
+    </section>
+<!-- точенчная навигация -------------------------------------->
+    <ul class="dotnav" id="menu">
+      <li class="dotnav__item dotnav__item--active">
+        <a href="" class="dotnav__link" data-scroll-to='0'></a>
+      </li>
+      <li class="dotnav__item">
+        <a href="" class="dotnav__link" data-scroll-to='1'></a>
+      </li>
+      <li class="dotnav__item">
+        <a href="" class="dotnav__link" data-scroll-to='2'></a>
+      </li>
+      <li class="dotnav__item">
+        <a href="" class="dotnav__link" data-scroll-to='3'></a>
+      </li>
+      <li class="dotnav__item">
+        <a href="" class="dotnav__link" data-scroll-to='4'></a>
+      </li>
+      <li class="dotnav__item">
+        <a href="" class="dotnav__link" data-scroll-to='5'></a>
+      </li>
+      <li class="dotnav__item">
+        <a href="" class="dotnav__link" data-scroll-to='6'></a>
+      </li>
+      <li class="dotnav__item">
+        <a href="" class="dotnav__link" data-scroll-to='7'></a>
+      </li> 
+      <li class="dotnav__item">
+        <a href="" class="dotnav__link" data-scroll-to='8'></a>
+      </li>
+    </ul>
+  </div>
+
+<!-- ============================подключение скриптов================================================= -->
+  <script src="https://api-maps.yandex.ru/2.1.17/?apikey=74e7ad2e-8c9e-41e9-a6a6-d56ffe620dbc&lang=ru_RU"
+     type="text/javascript"></script>
+
+
+     <script src="jquery-3.4.1.min.js"> </script>
+     <script src="fullpage.js"> </script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  <script src="./js/jquery.js"></script> -->
+  <script src="main.min.js"></script>
+</body>
+</html>
+ 

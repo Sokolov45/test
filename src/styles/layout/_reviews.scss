@@ -1,0 +1,121 @@
+
+.reviews {
+  height: 100%;
+  position: relative;
+  // min-height: 40.62rem;
+  width: 100%;
+  background-color: #cfd8dc;
+  background-size: cover;
+ font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+  @include tablets {
+    min-height: 0;
+  }
+  @include phones {
+  min-height: 0;
+  }
+}
+
+.reviews__list {
+  @include flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+.reviews__modal{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  width: 45%;
+  height: 35%;
+  background-color: #ffffff;
+  color: #1f2518;
+  font-size: 1.3rem;
+  // display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  @include phones {
+    width: 95%;
+    height: 35%;
+    font-size: 1rem;
+  }
+
+
+
+
+  .reviews__modal-content{
+    width: 85%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #313162;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+  }
+
+  .reviews__modal-title {
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    @include phones {
+      font-size: 1.4rem;
+    }
+  }
+
+  .modal-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 1rem;
+  }
+
+  .revies-close {
+    position: relative;
+    font-size: 2rem;
+    color: #ec8468;
+    border-radius: 50%;
+ 
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -50%;
+      width: 1.7rem;
+      height: 0.3rem;
+      background-color: #ec8468;
+      transform: rotate(45deg);
+      border-radius: 5px;
+     
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 1.7rem;
+      height: 0.3rem;
+      background-color: #ec8468;
+      transform: rotate(-45deg);
+      border-radius: 5px;
+    }
+  }
+}
+
+.revies-close:hover:before {
+  background-color: #a63215;
+}
+.revies-close:hover:after {
+  background-color: #a63215;
+}

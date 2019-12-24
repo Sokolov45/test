@@ -1,0 +1,83 @@
+.nav {
+  @include flex;
+  font-size: 0.76rem;
+  font-weight: 600;
+  flex-wrap: nowrap;
+  // margin-right: 0.8rem;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  @include tablets {
+    font-size: 0.7rem;
+  }
+  @include tablets {
+    display: none;
+
+  }
+  &--hamburger-menu {
+    @include flex;
+  font-size: 0.76rem;
+  font-weight: 600;
+  flex-wrap: nowrap;
+  // margin-right: 0.8rem;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  @include tablets {
+    font-size: 0.7rem;
+  }
+  @include tablets {
+    display: flex;
+
+  }
+
+
+
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    @include tablets {
+      font-size: 1.5rem;
+      
+      .nav__item {
+        display: flex;
+      list-style-type: none;
+    }
+    @include phones {
+      display: flex;
+  
+    }
+    }
+
+    // position: absolute;
+    // left: 50;
+    // top: 50;
+  }
+}
+
+.nav__item {
+  list-style: disc;
+  list-style-position: inside;
+  margin-right: 1rem;
+  width: max-content;
+
+  &:first-child {
+    list-style: none;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .nav__link:hover {
+    border-bottom: 1px solid #fff;
+  }
+
+  @include laptop {
+    margin-right: 0.6rem;
+  }
+
+}
+
+.nav__link--active {
+  border-bottom: 1px solid #fff;
+}

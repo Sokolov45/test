@@ -1,0 +1,47 @@
+.dotnav {
+  color: rgb(215, 219, 215);
+  position: fixed;
+  top: 15%;
+  right: 2%;
+  z-index: 20;
+
+  &__item {
+    list-style: disc;
+    margin-bottom: 0.18rem;
+  }
+  @include tablets {
+    display: none;
+  }
+  @include phones {
+    display: none;
+  }
+}
+
+
+.dotnav__link {
+  position: relative;
+}
+
+.dotnav__link::before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+
+  vertical-align: middle;
+  background: center center / contain no-repeat;
+  background-image: url('images/png/Ellipse.png');
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translate(-125%, -40%);
+  opacity: 0;
+}
+
+.dotnav__link:hover:before {
+  opacity: 100;
+}
+ 
+.dotnav__item--active .dotnav__link::before {
+  opacity: 100;
+
+}

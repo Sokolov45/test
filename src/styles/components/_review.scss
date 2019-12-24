@@ -1,0 +1,135 @@
+.review-item {
+  box-sizing: border-box;
+  overflow: auto;
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 25%;
+  height: 50%;
+  font-family: $title-font;
+  font-size: 0.87rem;
+  padding-right: 5%;
+  filter: grayscale(100%);
+  color: rgb(217, 217, 217);
+
+  @include tablets {
+    width: 50%;
+    height: 25%;
+    align-items: center;
+  }
+  @include phones {
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.5);
+    opacity: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &:hover:before {
+    opacity: 100;
+    transition: .5s;
+  }
+
+  &:hover .review__content{
+    opacity: 100;
+    transition-duration: .5s;
+  }
+
+}
+
+.review__content {
+  z-index: 20;
+  overflow: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  @include tablets {
+    align-items: center
+  }
+  @include phones {
+    align-items: center;
+  }
+
+  p {
+    margin-bottom: 10%;
+    font-family: 'gagalin';
+    @include tablets {
+      font-size: 1.5rem;
+      margin-bottom: 3%;
+      text-align: center;
+      margin-top: 0;
+    }
+    @include phones {
+      font-size: 1.5rem;
+      margin-bottom: 5%;
+      text-align: center;
+      padding: 0;
+    }
+  }
+
+  article {
+    margin-bottom: 10%;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    @include tablets {
+      margin-bottom: 3%;
+    }
+    @include phones {
+      display: none;
+    }
+  }
+
+  .review__btn {
+    width: max-content;
+    display: inline;
+    padding: 0.6rem 1rem;
+    position: relative;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 0.81rem;
+    background-color: #2f3135;
+    border-radius: 7%;
+    @include phones {
+      display: none;
+    }
+  }
+
+  .review__btn-480 {
+    display: none;
+    @include phones {
+    display: flex;
+    padding: 5% 5%;
+    background-color: #2f3135;
+    border-radius: 11%;
+    font-size: 0.6rem;
+  }
+}
+}
+
+.review__avatar {
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  img {
+     width: 100%; /* Ширина изображений */
+     height: 100%; /* Высота изображении */
+     object-fit: cover; /* Вписываем фотографию в область */
+  }
+}
+
+
