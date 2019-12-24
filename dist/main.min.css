@@ -1637,7 +1637,6 @@ template {
       min-height: 0; } }
 
 .menu__list {
-  position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
